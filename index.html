@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeInUpBig">
+        <div class="name">
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="navigation" id="navMenu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <section id="home" class="hero animate__animated animate__fadeInUpBig" >
+        <div class="herotxt">
+            <h1>Hello, I'm Ranjani K V<br>A Web Developer</h1>
+            <p>Fond of creating web application designs and bringing them to life using code.</p>
+        </div>
+        <div class="heroimg animate__animated animate__fadeInUpBig">
+            <img src="images/Optimized.webp" alt="Hero Image">
+        </div>
+    </section>
+    <section id="about">
+        <div class="about animate__animated animate__fadeInUpBig">
+            <h1>About Me</h1>
+            <p>I’m a passionate web developer currently pursuing Computer Science Engineering at Easwari Engineering College. I enjoy building responsive and user-friendly websites that combine clean design with efficient functionality. Alongside coding, I’m also part of the Campus Life content team, where I contribute creatively to events and activities. This mix of technical and creative work has helped me pick up new skills, work well with others, and express my ideas both through code and content.</p>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects animate__animated animate__fadeInUpBig">
+            <h1>My Projects</h1>
+            <div class="project-list">
+                <div class="project animate__animated animate__fadeInUpBig">
+                    <h2>OWASP Vulnerability Scanner</h2>
+                    <p>Worked on a simple web-app scanner using HTML, CSS, and Flask that detects OWASP Top 10 vulnerabilities, providing clear insights into security issues along with practical ways to prevent them.</p>
+                </div>
+                <div class="project animate__animated animate__fadeInUpBig">
+                    <h2>Hospital Management System</h2>
+                    <p>Created a hospital management project that streamlines patient details, appointments, and doctor records using Java. This project improved my understanding of real-world problem-solving through database-driven applications.</p>
+                </div>
+                <div class="project animate__animated animate__fadeInUpBig">
+                    <h2>Personal Portfolio Website</h2>
+                    <p>Developed a fully responsive portfolio with HTML and CSS, showcasing my projects, skills, and about me section, optimized for both desktop and mobile devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact animate__animated animate__fadeInUpBig">
+        <h1>Contact</h1>
+        <div class="form">
+            <form action="" method="post">
+                <label for="name">Enter Your Name:</label><br>
+                <input type="text" name="name" id="name" required><br>
+                <label for="email">Enter Your Email:</label><br>
+                <input type="email" name="email" id="email" required><br>
+                <label for="message">Enter Your Message:</label><br>
+                <textarea name="message" id="message" rows="5" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 portfolio. All rights reserved.</p>
+    </footer>
+    <script>
+    function toggleMenu() {
+        let nav = document.getElementById("navMenu");
+        nav.classList.toggle("active");
+    }
+    </script>
+</body>
+</html>
